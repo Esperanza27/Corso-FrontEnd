@@ -1,0 +1,59 @@
+body {
+  text-align: center;
+}
+.logo {
+  width: 25%;
+}
+.sotto-logo {
+  width: 100vw;
+  background-color: #fdfbf1;
+  border-top: 1px solid gold;
+  margin: 3px;
+  padding: 4px;
+}
+main,
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+#container-main {
+  width: 100%;
+}
+
+.container-contenuto {
+  width: 60vw;
+  text-align: left;
+  margin: 0 auto;
+}
+#imag {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.container-contenuto #description {
+  color: rgba(124, 127, 130, 0.445);
+  text-align: center;
+}
+#container-link {
+  border-left: 1px solid gold;
+  padding: 0 10px;
+}
+#test-red {
+  color: red;
+  margin-bottom: 0px;
+}
+a {
+  color: rgb(21, 163, 163);
+}
+.container-line {
+  border-top: 1px solid rgb(120, 222, 218);
+}
+
+ #container-footer {
+  width: 100%;
+}
+.container-contenuto {
+    width: 60vw;
+    text-align: left;
+    margin: 0 auto;
+  
