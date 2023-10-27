@@ -1,0 +1,157 @@
+/* IMPOSTAZIONI GENERALI */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Roboto:wght@400;700&display=swap");
+
+body,
+head {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.1;
+}
+
+body,
+head,
+p,
+span,
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+#container-body {
+  background-image: url("../img/sfondo.png");
+  /* padding: 10px; */
+  margin: 8px;
+}
+
+/* HEADER */
+#container-header {
+  background-image: linear-gradient(rgba(0, 160, 198, 1) 0%, #036d86 68%);
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+
+#container-navbar {
+  list-style-type: none;
+  margin-block-start: 0px;
+  padding-inline: 0px;
+  text-align: center;
+}
+
+#container-navbar li::before {
+  content: "★";
+}
+
+nav :hover {
+  color: red;
+}
+
+/* MAIN */
+#container-contenuto {
+  background-color: white;
+  box-shadow: 2px 0px rgb(171, 170, 170);
+  padding: 20px;
+}
+
+#sotto-title {
+  color: rgb(222, 216, 216);
+}
+
+
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+.sub-title {
+  text-align: center;
+}
+
+.strong {
+  color: rgb(138, 30, 111);
+}
+
+/* TABELLE */
+#section {
+  width: 30%;
+}
+
+table {
+  border-bottom: 1px solid hsl(247, 91%, 45%);
+  height: 50vh;
+  width: 100%;
+}
+thead {
+  width: 100%;
+}
+thead tr:nth-child(1) {
+  background-color: blue;
+  color: white;
+  height: 5vh;
+}
+
+tr {
+  box-sizing: inherit;
+  >
+}
+
+tr:nth-child(even) {
+  background-color: rgba(244, 239, 239, 0.823);
+}
+
+#colspan {
+  width: 100%;
+}
+
+/* VIDEO */
+#video {
+  width: 100%;
+  border-radius: 20px;
+  margin: 5px 0 15px 0;
+}
+
+/* CARD */
+.card {
+  width: 99%;
+  background-color: rgba(209, 209, 209, 0.963);
+  padding: 10px;
+  margin: 2px 4px 15px 2px;
+}
+
+/* FORM */
+
+#email {
+  width: 20%;
+  height: 3vh;
+  border-bottom: dashed rgb(24, 23, 23);
+  border-left: none;
+  border-top: none;
+  border-right: none;
+}
+
+#email:focus {
+  background-color: aqua;
+}
+
+#button {
+  background-color: rgb(60, 0, 255);
+  color: white;
+  width: 10%;
+  height: 3vh;
+}
+
+/* ELEMENTI NELL' ASIDE */
+.align-left {
+  text-align: right;
+}
+
+/* FOOTER */
+#card-footer {
+  width: 99%;
+  background-image: linear-gradient(rgb(6, 68, 60) 0%, #285450 68%);
+  padding: 10px;
+  margin: 2px 4px 2px 2px;
+  color: white;
+  text-align: center;
+}
