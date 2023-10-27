@@ -33,12 +33,9 @@ h6 {
 
 /* boddy */
 .container-logo {
-    /*  width: 100vw; */
-    /* height: 10vh; */
-    padding: 20px ;
+    padding: 20px;
     background-color: black;
     text-align: center;
-   
 }
 
 #logo {
@@ -47,7 +44,6 @@ h6 {
     margin: 20px auto;
 }
 
-/*  */
 /* main */
 #container-banner {
     background-image: url("../images/banner.jpg");
@@ -69,30 +65,14 @@ button {
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
 }
-.test-decoration{
+
+.test-decoration {
     text-decoration: none;
-}
-.float-container{
-    padding: 10px;
-    width: 100%;
-}
-.float-child1{
-    width: 50%;
-    float: left;
-    padding: 10px;
-    display: inline-block;
-}
-.float-child2{
-    width: 50%;
-    float: right;
-    padding: 10px;
-    display: inline-block;
 }
 
 #imagen-round {
-    border-radius: 50%; 
+    border-radius: 50%;
 }
-
 
 /* section */
 #Testimonianze {
@@ -100,9 +80,9 @@ button {
     color: white;
     padding: 10px;
 }
-#interline{
+
+#interline {
     line-height: 0.5;
-    
 }
 
 #h2-white {
@@ -116,13 +96,11 @@ button {
     text-align: center;
 }
 
-/* .resized {
-    width: 100%;
-} */
 .container-information {
     text-align: center;
 }
-.inline{
+
+.inline {
     display: inline-block;
     padding: 30px;
 }
@@ -142,15 +120,25 @@ Footer link {
     color: #c8e7f0;
 }
 
-address{
+address {
     font-style: normal;
 }
-.color-width{
+
+.color-width {
     color: white;
 }
-#line{
-    width: 10vw;
+
+
+#lef {
+
+    text-align: left;
+    width: 30vw;
+    margin:0 auto;
+}
+
+#line {
+    width: 40%;
     height: 2px;
     background-color: #c8e7f0;
-    margin: 0 auto ;
+
 }
