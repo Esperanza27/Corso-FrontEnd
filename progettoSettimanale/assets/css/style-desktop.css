@@ -1,0 +1,156 @@
+/* font body */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&family=Montserrat:wght@600;700&family=Open+Sans:wght@400;700&family=Poppins:wght@200;300;400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Generale */
+body,
+head {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #393d41;
+    font-size: 1,2;
+    line-height: 1.65;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #25a2c3;
+    line-height: 1.5;
+}
+
+/* boddy */
+.container-logo {
+    /*  width: 100vw; */
+    /* height: 10vh; */
+    padding: 20px ;
+    background-color: black;
+    text-align: center;
+   
+}
+
+#logo {
+    width: 30%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/*  */
+/* main */
+#container-banner {
+    background-image: url("../images/banner.jpg");
+    background-position: top center, top left;
+    background-size: cover;
+    text-align: center;
+    padding: 25px;
+}
+
+#container-banner h1 {
+    margin: 0;
+}
+
+button {
+    background-color: #f04c2f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+.test-decoration{
+    text-decoration: none;
+}
+.float-container{
+    padding: 10px;
+    width: 100%;
+}
+.float-child1{
+    width: 50%;
+    float: left;
+    padding: 10px;
+    display: inline-block;
+}
+.float-child2{
+    width: 50%;
+    float: right;
+    padding: 10px;
+    display: inline-block;
+}
+
+#imagen-round {
+    border-radius: 50%; 
+}
+
+
+/* section */
+#Testimonianze {
+    background-color: #e22d0e;
+    color: white;
+    padding: 10px;
+}
+#interline{
+    line-height: 0.5;
+    
+}
+
+#h2-white {
+    color: white;
+}
+
+.card {
+    border: 2px solid #dee1e3;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* .resized {
+    width: 100%;
+} */
+.container-information {
+    text-align: center;
+}
+.inline{
+    display: inline-block;
+    padding: 30px;
+}
+
+/* footer*/
+footer {
+    color: #c8e7f0;
+    background-color: #25a2c3;
+    padding: 20px;
+}
+
+Footer h2 {
+    color: white;
+}
+
+Footer link {
+    color: #c8e7f0;
+}
+
+address{
+    font-style: normal;
+}
+.color-width{
+    color: white;
+}
+#line{
+    width: 10vw;
+    height: 2px;
+    background-color: #c8e7f0;
+    margin: 0 auto ;
+}
