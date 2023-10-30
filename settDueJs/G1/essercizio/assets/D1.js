@@ -30,19 +30,19 @@ let titoloBooleam ="Booleam";
 let typeBooleam ="Può assumere solo i valori true (vero) o false (falso).";
 console.log(typeBooleam);
 
-let titoloUndefined ="Undefined";
+let tUndefined ="Undefined";
 let typeUndefined ="Che non a stato assegnato un valore.";
 console.log(typeUndefined);
 
 let titoloNull ="Null";
 let typeNull ="Che ha un valore intenzionalmente assente.";
-console.log(typeNull);
+console.log(typeUndefined);
 
 document.getElementById("typeString").innerHTML =(titoloString + ": " + typeString );
 document.getElementById("typeNumber").innerHTML =(titoloNumber + ": " + typeNumber);
-document.getElementById("typeBooleam").innerHTML =(titoloBooleam + ". " +typeBooleam );
-document.getElementById("typeUndefined").innerHTML =(titoloUndefined + ". " + typeUndefined);
-document.getElementById("typeNull").innerHTML =(titoloNull + ". " + typeNull);
+document.getElementById("typeBooleam").innerHTML =(titoloBooleam + ": " +typeBooleam );
+document.getElementById("typeUndefined").innerHTML =(tUndefined + ": " +typeUndefined);
+document.getElementById("typeNull").innerHTML =(titoloNull + ": " + typeNull);
 
 
 /* ESERCIZIO 2
@@ -87,7 +87,7 @@ let x = 12;
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
-let sottrazione = (x-4);
+let sottrazione = (4 - x);
 console.log(sottrazione);
 document.getElementById("sottrazione").innerHTML =(sottrazione);
 
@@ -101,4 +101,6 @@ let name2= "Jhon";
  console.log(name1 === name2);
  document.getElementById("equality").innerHTML =(name1 === name2);
 /* extra */
-console.log(name1.toLowerCase === name2.toLowerCase)
+let equality2 = name1.toLowerCase === name2.toLowerCase
+console.log(equality2)
+document.getElementById("equality2").innerHTML =(equality2);
