@@ -14,9 +14,9 @@ REGOLE
 /* Risposta
 1. String :  dati di carateri senza specifiche
 2. Number : che il valore è un numero semplice o decimale 
-4. Boolean : può assumere solo i valori true (vero) o false (falso).
-5. Undefined : che non a stato assegnato un valore.
-6. Null : che ha un valore intenzionalmente assente. */
+3. Boolean : può assumere solo i valori true (vero) o false (falso).
+4. Undefined : che non a stato assegnato un valore.
+5. Null : che ha un valore intenzionalmente assente. */
 let titoloString = "String"
 console.log(titoloString);
 let typeString = "Dati di carateri senza specifiche.";
@@ -44,15 +44,12 @@ document.getElementById("typeBooleam").innerHTML =(titoloBooleam + ": " +typeBoo
 document.getElementById("typeUndefined").innerHTML =(tUndefined + ": " +typeUndefined);
 document.getElementById("typeNull").innerHTML =(titoloNull + ": " + typeNull);
 
-
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
-
 let myName = "Esperanza";
 console.log(myName);
 document.getElementById("myName").innerHTML =(myName);
-
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.*/
@@ -81,8 +78,6 @@ let x = 12;
  console.log(age + myName);
  console.log(myName);
  document.getElementById("age").innerHTML =(age + myName);
-
-
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
