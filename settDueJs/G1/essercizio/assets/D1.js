@@ -38,18 +38,18 @@ let titoloNull ="Null";
 let typeNull ="Che ha un valore intenzionalmente assente.";
 console.log(typeUndefined);
 
-document.getElementById("typeString").innerHTML =(titoloString + ": " + typeString );
+/* document.getElementById("typeString").innerHTML =(titoloString + ": " + typeString );
 document.getElementById("typeNumber").innerHTML =(titoloNumber + ": " + typeNumber);
 document.getElementById("typeBooleam").innerHTML =(titoloBooleam + ": " +typeBooleam );
 document.getElementById("typeUndefined").innerHTML =(tUndefined + ": " +typeUndefined);
-document.getElementById("typeNull").innerHTML =(titoloNull + ": " + typeNull);
+document.getElementById("typeNull").innerHTML =(titoloNull + ": " + typeNull); */
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 let myName = "Esperanza";
 console.log(myName);
-document.getElementById("myName").innerHTML =(myName);
+/* document.getElementById("myName").innerHTML =(myName); */
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.*/
@@ -58,7 +58,7 @@ let num1 = 12;
 let num2 = 20;
 const somma = num1 + num2;
 console.log(somma);
-document.getElementById("somma").innerHTML =(somma);
+/* document.getElementById("somma").innerHTML =(somma); */
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -66,7 +66,7 @@ document.getElementById("somma").innerHTML =(somma);
 
 let x = 12;
  console.log(x);
- document.getElementById("x").innerHTML =(x);
+/*  document.getElementById("x").innerHTML =(x); */
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
@@ -77,14 +77,14 @@ let x = 12;
  /* age=33; */
  console.log(age + myName);
  console.log(myName);
- document.getElementById("age").innerHTML =(age + myName);
+ /* document.getElementById("age").innerHTML =(age + myName); */
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
 */
 let sottrazione = (4 - x);
 console.log(sottrazione);
-document.getElementById("sottrazione").innerHTML =(sottrazione);
+/* document.getElementById("sottrazione").innerHTML =(sottrazione); */
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
@@ -94,8 +94,9 @@ document.getElementById("sottrazione").innerHTML =(sottrazione);
  let name1= "jhon";
 let name2= "Jhon";
  console.log(name1 === name2);
- document.getElementById("equality").innerHTML =(name1 === name2);
+ /* document.getElementById("equality").innerHTML =(name1 === name2); */
 /* extra */
 let equality2 = name1.toLowerCase === name2.toLowerCase
 console.log(equality2)
-document.getElementById("equality2").innerHTML =(equality2);
+/* document.getElementById("equality2").innerHTML =(equality2);
+ */
