@@ -4,10 +4,13 @@
 let num1 = 27;
 let num2 = 14;
 if (num1 < num2) {
+/*   document.getElementById("num").innerHTML ="il " num1 + " è il numero più grande"; */
   console.log(num2 + " è il numero più grande");
 } else if (num1 > num2) {
+ /*  document.getElementById("num").innerHTML ="il numero " num1   ",", num2 + " è il numero più grande"; */
   console.log(num1 + " è il numero più grande ");
 } else {
+  /* document.getElementById("num").innerHTML ="il numero " num1 + ",", num2 + " sono uguali" */;
   console.log(num1 + ",", num2 + " sono uguali");
 }
 
@@ -15,20 +18,22 @@ if (num1 < num2) {
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-if (num1 != 5) {
+if (num1 !== 5) {
   console.log("not equal");
+}else{
+  console.log("Il numero è uguale a 5")
 }
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-if (num1 % 5 == 0) {
+if (num1 % 5 === 0) {
+  document.getElementById("diviso5").innerHTML = "Il numero " + num1 + " è divisibile per 5" ;
   console.log("divisibile per 5");
 } else {
   console.log("non è divisibile per 5");
 }
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
@@ -58,16 +63,19 @@ if ((num1 || num2) == 8) {
 
 let somma = num1 + num2;
 let subtraction = num1 - num2;
+let subtraction2 = num2 - num1;
 
 if ((num1 || num2) == 8) {
   console.log("uno degli numeri è 8");
-} else if ((somma || subtraction) == 8) {
+} else if ((somma || subtraction ||subtraction2) == 8) {
   console.log(
     "la somma o la sottrazione di " + num1 + " e " + num2 + " è uguale a 8"
   );
 } else {
   console.log("Nessuni degli numeri è 8 ni la somma ni la sottrazione è 8 ");
 }
+// Option.4
+
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -76,14 +84,12 @@ if ((num1 || num2) == 8) {
 */
 let totalShoppingCart = 60;
 let spedizione = 10;
-let totale;
+let totale = totalShoppingCart;
 if (totalShoppingCart < 50) {
-  totale = totalShoppingCart + spedizione;
+  totale += spedizione;
   console.log(totale);
-} else {
-  totale = totalShoppingCart;
-  console.log(totale);
-}
+} console.log(totale);
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 6
@@ -175,35 +181,22 @@ console.log(me.city);
 
 /* ESERCIZIO 12
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
-*/
-/*  delete me.lastName;
- console.log(me.lastName); */
+*/ 
+//Option 1 
+delete me.skills[2];
+console.log(me);
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
-/* me.skills.pop;
-console.log(me.skills); */
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
-/* const numeri = [];
-numeri.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10); */
+
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/*
-opcione 1--->
-
-numeri.pop;
-console.log(numeri);
-numeri.push(100);
-console.log(numeri) */
-
-/* console.log(numeri.length);
-numeri[9] = 100;
-document.getElementById("numeri").innerHTML = numeri; */
-/* document.getElementById("").innerHTML =(); */
+// document.getElementById("").innerHTML =(); 
