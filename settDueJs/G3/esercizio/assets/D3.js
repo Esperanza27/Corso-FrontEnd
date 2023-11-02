@@ -135,7 +135,7 @@ const eyecolor = {
   yellow: [],
   brown: [],
   red: [],
-  blueGray: [],
+  "blue-gray": [],
 };
 
 /* ESERCIZIO 5
@@ -161,8 +161,8 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
       break;
 
     default:
-      "blueGray";
-      eyecolor.blueGray.push(starWarsCharacters[i]);
+      
+      eyecolor["blue-gray"].push(starWarsCharacters[i]);
       break;
   }
 }
@@ -172,16 +172,16 @@ console.log(eyecolor);
   Usa un while loop per calcolare la massa totale dell'equipaggio. Salvala in una variabile chiamata "crewMass".
 */
 let crewMass = 0;
-let i = 0;
-while (i < starWarsCharacters.length) {
-  crewMass = starWarsCharacters[i].mass + crewMass;
-  i++;
+let conta = 0;
+while (conta < starWarsCharacters.length) {
+  crewMass = starWarsCharacters[conta].mass + crewMass;
+  conta++;
 }
 console.log(crewMass);
 /* ESERCIZIO 7
   Crea uno if/else statement per rivelare la tipologia di carico, utilizzando la massa totale, di un'ipotetica astronave contenente i personaggi dell'array "starWarsCharacters".
 
-  Se la massa è inferiore a 500 stampa in console: "Ship is under loaded"
+  Se la massa è inferiore a 500 stampa in console: "Ship is half loaded"
   Se la massa è superiore a 500 stampa in console: "Ship is half loaded"
   Se la massa è superiore a 700 stampa in console: "Warning: Load is over 700"
   Se la massa è superiore a 900 stampa in console: "Critical Load: Over 900"
@@ -189,16 +189,34 @@ console.log(crewMass);
 
   Una volta fatto, modifica la massa di qualche elemento dell'equipaggio e vedi se riesci ad ottenere un messaggio diverso.
 */
-if (crewMass < 500) {
-  console.log("Ship is under loaded");
-} else if (crewMass > 500) {
-  console.log("Ship is half loaded");
-} else if (crewMass > 700) {
-  console.log("Warning: Load is over 700");
+if (crewMass > 1000) {
+  console.log("DANGER! OVERLOAD ALERT: escape from ship now!");
 } else if (crewMass > 900) {
   console.log("Critical Load: Over 900");
+} else if (crewMass > 700) {
+  console.log("Warning: Load is over 700");
+} else if (crewMass > 500) {
+  console.log("Ship is half loaded");
 } else {
-  console.log("DANGER! OVERLOAD ALERT: escape from ship now!");
+  console.log("Ship is half loaded");
+}
+switch (true) {
+  case crewMass > 1000:
+    console.log("DANGER! OVERLOAD ALERT: escape from ship now!");
+    break;
+  case crewMass > 900:
+    console.log("Critical Load: Over 900");
+    break;
+  case crewMass > 700 :
+    console.log("Warning: Load is over 700");
+    break;
+  case crewMass > 500:
+    console.log("Ship is half loaded");
+    break;
+
+  default:
+    console.log("Ship is half loaded");
+    break;
 }
 
 /* ESERCIZIO 8
