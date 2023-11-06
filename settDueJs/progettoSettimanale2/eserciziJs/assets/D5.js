@@ -54,13 +54,35 @@ const cars = [
     model: "Polo",
     color: "black",
     trims: ["life", "style", "r-line"],
-  },
-];
+  }
+]
 
+function modifyCars() {
+ const newCars = [];
+ for (let index = 0; index < cars.length; index++) {
+  newCars.push({...cars[index], licensePlate : 5})
+ }
+ return newCars;
+}      
+console.log(modifyCars());                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+cars.push({brand: "Peugeot",
+model: "208",
+color: "blue",
+trims: ["allure", "GT"],})
+console.log("questo è il esercizio 6", cars)
+/* function modifyCar() {
+  const newCar = [];
+  for (let index = 0; index < cars.length; index++) {
+    cars[index].trims.pop()
+   newCar.push({...cars[index], trims: cars })
+  }
+  return newCar;
+ }      
+ console.log(modifyCar()); */
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
