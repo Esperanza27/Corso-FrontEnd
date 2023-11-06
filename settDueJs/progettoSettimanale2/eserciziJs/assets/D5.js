@@ -24,7 +24,7 @@ console.log(pets);
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
 */
 
-for (let i = pets.length - 1; i >= 0 ; i++) {
+for (let i = pets.length - 1; i >= 0 ; i--) {
   console.log("questo è il esercizio 4", pets[i]);
 }
 /* ESERCIZIO 4
