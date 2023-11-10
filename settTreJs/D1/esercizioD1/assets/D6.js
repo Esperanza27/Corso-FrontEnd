@@ -57,8 +57,8 @@ console.log("Quinto esercizio", SommaArray2(array));
 /* ESERCIZIO 6 (map)
   Scrivi una funzione che, dato un array di soli numeri e un numero n come parametri, ritorni un secondo array con tutti i valori del precedente incrementati di n
 */
-/* const arr = [1, 2, 3,4,5,6];
-const n = 5; */
+/*  const arr = [1, 2, 3,4,5,6];
+const n = 5;  */
 
 const addN = function (arr, n) {
   return arr.map((el) => el + n);
@@ -71,7 +71,7 @@ console.log("Sesto esercizio", addN([1, 2, 3, 4, 5, 6], 5));
 */
 const arrayStr = ["HTML", "CSS", "Javascript"];
 const stringLength = (array) => {
-  return arrayStr.map((el) => el.length);
+  return array.map((el) => el.length);
 };
 console.log("Settimo  esercizio", stringLength(arrayStr));
 
@@ -242,9 +242,7 @@ console.log("Undicesimo esercizio", titoliFilm(movies));
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
 */
 const filmMillenio = (array) => {
-  return array.filter((el) => {
-    return parseInt(el.Year) >= 2000;
-  });
+  return array.filter((el) => parseInt(el.Year) >= 2000);
 };
 console.log("Dodicesimo esercizio", filmMillenio(movies));
 
@@ -259,18 +257,15 @@ console.log("Tredicesimo esercizio", sommaYears(movies));
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
 */
- const newImdbArray =[]
-const imdbIDMovies = (array) => {
-  value = "tt0848228";
-  return array.find(( current ) => value === current.imdbID );
+const imdbIDMovies = (array, id) => {
+  return array.find((current) => id === current.imdbID);
 };
 
-console.log("Quattordicesimo esercizio", imdbIDMovies(movies));
+console.log("Quattordicesimo esercizio", imdbIDMovies(movies, "tt0848228"));
 /* ESERCIZIO 15 (findIndex)
   Scrivi una funzione per ottenere dall'array fornito l'indice del primo film uscito nell'anno fornito come parametro.*/
-const getIndice =(array,year)=>{
-  
-return array.findIndex((element)=>parseInt(element.Year) === year)
-}
+const getIndice = (array, year) => {
+  return array.findIndex((element) => parseInt(element.Year) === year);
+};
 
 console.log("Quindicesimo esercizio", getIndice(movies, 1984));
