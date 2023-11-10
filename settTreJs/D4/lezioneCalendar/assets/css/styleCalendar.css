@@ -72,7 +72,7 @@ form {
 
 #addMeeting div {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
     margin: 50px;
 }
 
@@ -113,7 +113,7 @@ input::placeholder {
     border-radius: 50%;
 }
 
-#newMeetingTimeName {
+#newMeetingName {
     width: 200px;
 }
 
@@ -140,4 +140,13 @@ form button {
 
 #appointments ul li {
     min-height: 30px;
+}
+.pallino{
+    position: absolute;
+    left: 45%;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #7a408a;
 }
