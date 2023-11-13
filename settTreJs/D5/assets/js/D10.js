@@ -400,11 +400,11 @@ const tutti = document.getElementsByTagName("td");
 /* ESERCIZIO 23
   Scrivi una funzione per aggiungere un background di colore rosso a ogni link all'interno della pagina.
 */
-/* const colorLink = function () {
+const colorLink = function () {
   const linkRed = document.querySelectorAll("link");
   linkRed.classList.add("linkred");
 };
-colorLink(); */
+colorLink();
 
 /* ESERCIZIO 24
   Scrivi una funzione per aggiungere un nuovo elemento alla lista non ordinata con id "myList".
