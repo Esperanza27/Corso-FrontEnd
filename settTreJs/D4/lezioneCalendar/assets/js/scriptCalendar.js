@@ -1,6 +1,6 @@
 /* 1. dobbiamo capire in che mese siamo, per scriverlo nell'h1, e quanti giorni ha il mese, 
 per generare il corretto numero di celle */
-const now = new Date(); // me da la data corrente
+const now = new Date(); // me da la data corrente.
 /* per salvare gli appuntamenti abbiamo bisogno di un'array, perchè ogni appuntamento è una stringa, ogni giorno 
 può contenere infiniti appuntamenti e ogni mese ha un numero di giorni variabile.
 creeremo quindi un array di array, dove l'array padre è il mese e gli figli rappresentano i giorni
@@ -26,13 +26,13 @@ const monthNames = [
 ];
 const scriviMese = function () {
   const title = document.querySelector("h1");
-  const indiceMese = now.getMonth(); // 10 perche siamo a novembre, restituisce un number
+  const indiceMese = now.getMonth(); // 10 perche siamo a novembre, restituisce un number - il mese si conta da 0-11
   const nomeMese = monthNames[indiceMese]; // si retituisce novembre
   title.innerText = nomeMese;
 };
 scriviMese();
 /*  sappiamo in che mese siamo , ma quanti giorni ha questo mese ? per riempire le celle */
-/* dal momento che febbaio nehli anni bisestili ha 29 giorni, per sapere il mio mese quanti giorni  */
+/* dal momento che febbaio negli anni bisestili ha 29 giorni, per sapere il mio mese quanti giorni  */
 const giorniTotale = function () {
   const anno = now.getFullYear(); // ci da il anno...> 2023 perche siamo nel anno 2023
   const mese = now.getMonth(); // ristituisce 10, perche siamo a novembre
@@ -44,8 +44,8 @@ const giorniTotale = function () {
     anno,
     mese + 1,
     0
-  ); /* con lo 0 le stiamo dicendo dame il giorno prima dell mese prima,
-questa data corrisponde allo 0 dicembre 2023, che nos esiste, e che quindi è il 30 novembre 2023; novembre ha trenta giorni*/
+  ); /* con lo 0 le stiamo dicendo dame il giorno prima dell mese prima del mmese corrente,
+questa data corrisponde allo 0 dicembre 2023, che nos esiste, e che quindi è il ultimo giorno del mese corrente (30 novembre 2023); novembre ha trenta giorni*/
   const numeriGiorni = ultimoGiorno.getDate(); // ritorna il numeri di giorni del mese
 
   return numeriGiorni; /* numeriGiorni è il numero di
@@ -62,7 +62,7 @@ const deselezionaCelle = function () {
   });
 };
 
-// quando faccio click su un giorno, nel di id= 'newMeetingDay' dovrò leggere la data selezionata"
+// quando faccio click su un giorno, nel div id= 'newMeetingDay' dovrò leggere la data selezionata"
 const giornoAppuntamento = function (indiceGiorno) {
   const giorno = document.getElementById("newMeetingDay");
   giorno.classList.add("hasDay");
