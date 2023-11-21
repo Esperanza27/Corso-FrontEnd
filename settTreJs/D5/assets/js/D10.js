@@ -214,10 +214,19 @@ console.log("esercizio 4 " + "\n" + deleteOne("Esperanza", false));
   Crea una funzione chiamata "onlyLetters" che riceve una stringa come parametro e la ritorna eliminando tutte le cifre numeriche.
   Es.: onlyLetters("I have 4 dogs") => ritorna "I have dogs"
 */
-/* function onlyLetters(string,) {
-  
+function onlyLetters(string) {
+  let nuovaString = '';
+  for (let index = 0; index < string.length; index++) {
+    const lettera = string[index];
+    if (isNaN(lettera) ) {
+      nuovaString += lettera;
+    }
+    
+  }
+  return nuovaString;
 }
- */
+console.log("esercizio 5 " + "\n" , onlyLetters("ho 2 cane"));
+
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
@@ -290,18 +299,18 @@ function howManyDays(month,day) {
   return Math.floor((getDataCurrent - getData) / msPerDay);
 
 }
-console.log(howManyDays(15,8));
- */
+console.log(howManyDays(15,8)); */
+
 /* ESERCIZIO 10
   Scrivi una funzione chiamata "isTodayMyBirthday" che deve ritornare true se oggi è il tuo compleanno, falso negli altri casi.
 */
-/* function isTodayMyBirthday() {
+/* function isTodayMyBirthday(compleanno) {
  
 (compleanno === getDataCurrent)? true : false;
 
 }
-console.log(isTodayMyBirthday(27/06)); */
-
+console.log(isTodayMyBirthday(getDay(27), getMont(6)));
+ */
 // Arrays & Oggetti
 
 // NOTA: l'array "movies" usato in alcuni esercizi è definito alla fine di questo file
@@ -373,7 +382,9 @@ console.log("esercizio 16" + "\n", sumAllTheYears(movies));
 /* ESERCIZIO 17
   Scrivi una funzione chiamata "searchByTitle" che riceve una stringa come parametro e ritorna i film nell'array "movies" fornito che la contengono nel titolo.
 */
-function searchByTitle(string) {}
+function searchByTitle(string) {
+
+}
 /* ESERCIZIO 18
   Scrivi una funzione chiamata "searchAndDivide" che riceve una stringa come parametro e ritorna un oggetto contenente due array: "match" e "unmatch".
   "match" deve includere tutti i film dell'array "movies" fornito che contengono la stringa fornita all'interno del proprio titolo, mentre "unmatch" deve includere tutti i rimanenti.
@@ -402,7 +413,7 @@ const tutti = document.getElementsByTagName("td");
 */
 const colorLink = function () {
   const linkRed = document.querySelectorAll("link");
-  linkRed.classList.add("linkred");
+  linkRed.forEach((el)=>el.classList.add("linkred"));
 };
 colorLink();
 
@@ -431,8 +442,10 @@ lista();
 */
 const aggiungeTag = function () {
   const tag  = document.getElementsByTagName("tr")
-  tag.classList.add("test");
-}
+  tag.map((tag)=>
+    tag.classList.add("test")
+  )
+  }
  aggiungeTag()
 // [EXTRA] JS Avanzato
 
