@@ -7,10 +7,11 @@ body {
     /*  padding: 40px; */
     color: #191919;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1.2rem;
     /* font-family: 'Spectral', serif;
  */
 }
+
 h2,
 p {
     margin: 0px;
@@ -20,15 +21,28 @@ p {
     font-weight: 400;
     font-size: 19px;
 }
-.text-color-grey{
+
+.text-color-grey {
     color: #6B6B6B;
 }
-.text-small{
+
+.text-small {
     font-size: 14.5px;
 }
+
 .padding {
-    padding: 10px 80px;
+    padding: 10px 100px;
 }
+
+.padding-bottom {
+    padding-bottom: 30px;
+}
+
+.margin {
+    margin: 30px 0px;
+}
+
+
 .button1 {
     border-radius: 30px;
     padding: 10px 40px;
@@ -46,17 +60,32 @@ p {
 
 .container-header {
     background-color: #ffc017;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* padding: 0px 40px; */
 }
 
 .container-navbar {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    background-color: #ffc017;
+
+}
+
+.container-navbar .navbar {
     display: flex;
     flex-direction: row;
     border-bottom: solid 1px black;
     justify-content: space-between;
+    height: 75px;
+    /*   padding: 25px ; */
+}
 
-    margin-bottom: 0px;
-
+.logo {
+    width: 200px;
 }
 
 .container-navbar .button1 {
@@ -75,9 +104,12 @@ p {
 
 .container-slogan {
     width: 100%;
+    height: 480px;
     display: flex;
     padding-bottom: 20;
     border-bottom: solid 1px #191919;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container-slogan .title-slogan {
@@ -93,35 +125,49 @@ p {
     letter-spacing: -0.1em;
     margin: 0;
     padding-top: 0px;
+    overflow: hidden;
+    position: relative;
 }
 
 .container-slogan .animation {
-    width: 40%;
+    position: absolute;
+    top: 75px;
+    right: 0px;
+    width: 550px;
+
 }
 
 /* main */
-.caption{
+.caption {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-weight: 700;
+    font-weight: 600;
+    padding-bottom: 0px;
 }
+
+.caption img {
+    width: 40px;
+}
+
 .container-card {
     display: flex;
     flex-wrap: wrap;
     border-bottom: solid 1px rgb(216, 212, 212);
+    margin: 0px;
+    gap: 10px;
 }
 
 .container-card .card {
     width: 33%;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .card .opacity {
     opacity: 0.1;
     font-size: 3rem;
-    padding-top: 15px;
+    padding-top: 14px;
 }
 
 .container-dati {
@@ -149,16 +195,20 @@ p {
 #section {
     display: flex;
     flex-direction: row;
+    gap: 50px;
 }
 
 .container-articles {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
 }
 
 .article {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
 }
 
 .details {
@@ -190,20 +240,22 @@ p {
     width: 20vw;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-around;
+    gap: 10px;
+    padding-top: 20px;
 }
+
 .container-button .button3 {
     border: solid 1px #efebebe0;
     color: #6B6B6B;
-    padding: 4px 8px;
+    padding: 7px 10px;
 }
 
-#Discover-matters .container-label{
+#Discover-matters .container-label {
     width: 20vw;
     border-top: solid 1px #efebebe0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
+    padding-top: 20px;
 }
