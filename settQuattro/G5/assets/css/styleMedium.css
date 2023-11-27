@@ -117,7 +117,9 @@ p {
     font-size: 1.8rem;
     font-weight: 300;
 }
-
+.container-slogan #subTitle{
+padding-bottom: 30px;
+}
 .container-slogan .title-slogan h2 {
     font-size: 6rem;
     font-family: 'Spectral', serif;
