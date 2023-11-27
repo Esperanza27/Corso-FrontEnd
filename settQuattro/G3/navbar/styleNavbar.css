@@ -1,0 +1,118 @@
+/* movile */
+.container-navbar .navbar {
+    width: 100%;
+    display: flex;
+    background-color: #FEF7E2;
+    border-radius: 120px;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    margin: 10px;
+    row-gap: 10px;
+    justify-content: space-evenly;
+}
+
+.navbar .test {
+    font-weight: 700;
+    display: flex;
+    min-width: 40%;
+    background-color: #FFDF7F;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 40px;
+    justify-content: center;
+}
+
+.navbar .test1 {
+    width: 70%;
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #FFDF7F;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.test1 .logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* tablet */
+@media screen and (min-width:768px) {
+    .container-navbar {
+        justify-content: start;
+
+    }
+
+    .container-navbar .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        padding: 10px 5px;
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    .navbar .test {
+        display: flex;
+        min-width: 15%;
+        padding: 10px 0;
+    }
+
+    .navbar .test1 {
+        width: 15%;
+        justify-content: center;
+        gap: 10px;
+        display: flex;
+        align-items: center;
+        background-color: #FFDF7F;
+        padding: 20px;
+        border-radius: 40px;
+        order: 3;
+        z-index: 3;
+    }
+
+    #test2 {
+        order: 1;
+    }
+
+    #test3 {
+        order: 2;
+    }
+
+    #test4 {
+        order: 4;
+    }
+
+    #test5 {
+        order: 5;
+    }
+}
+
+@media screen and (min-width:1200px) {
+   
+    .container-navbar .navbar {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        padding: 10px 5px;
+        margin: 0px;
+        border-radius: 0px;
+        justify-content: flex-start;
+    }
+
+    .navbar .test {
+        display: flex;
+        min-width: 80%;
+        padding: 30px 0px;
+    }
+
+    .navbar .test1 {
+        min-width: 80%;
+        padding: 1px 0px;
+        order: 0;
+    }
+}
