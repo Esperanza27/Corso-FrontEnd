@@ -68,9 +68,12 @@ p {
 
 .container-navbar {
     width: 100%;
-    position: fixed;
-    top: 0px;
-    z-index: 1;
+   /*  position: fixed;
+    top: 0px;*/
+    z-index: 5; 
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: #ffc017;
 
 }
@@ -236,6 +239,9 @@ padding-bottom: 30px;
 /* lateral */
 #Discover-matters {
     width: 38%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
 }
 
 #Discover-matters .container-button {
