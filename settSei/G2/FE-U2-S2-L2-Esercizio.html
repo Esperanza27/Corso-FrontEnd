@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-info-subtle">
+    <nav class="navbar navbar-expand-lg bg-info-subtle ">
         <div class="container-fluid px-5 ">
             <a class="navbar-brand" href="#"><img src="assets/img/airplane.png" alt="Bootstrap" width="40"
                     height="40"></a>
@@ -23,19 +23,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active fs-4" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Saldi </a>
+                        <a class="nav-link fs-4" href="#saldi">Saldi </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#"> Welcome Summer </a>
+                        <a class="nav-link fs-4" href="#welcome-summer"> Welcome Summer </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#"> Last Minute </a>
+                        <a class="nav-link fs-4" href="#last-Minute"> Last Minute </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#"> Recensioni </a>
+                        <a class="nav-link fs-4" href="#dicono-di-noi"> Recensioni </a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -50,12 +50,11 @@
             <div class="col-sm ">
                 <div class="card p-3 bg-light w-100">
                     <div class="card-body ">
-                        <div class="d-flex">
-                            <h1 class="card-title display-1">Eveline-R</h1><span
-                                class="d-flex align-items-center display-6"> -Feel the Freedom</span>
+                        <div class=" d-flex flex-wrap ">
+                            <h1 class=" display-1 d-inline-block  align-middle">Eveline-R</h1><span class="d-flex align-items-center display-6"> -Feel the Freedom</span>
                         </div>
                         <hr />
-                        <p class="card-text fs-1">Scopri le destinazioni più calde del momento!</p>
+                        <p class="card-text fs-1"><i>Scopri le destinazioni più calde del momento!</i></p>
                         <a href="#" class="btn bg-info text-white"><b>Prenota ora </b></a>
                     </div>
                 </div>
@@ -63,16 +62,22 @@
         </div>
         <br>
 
-        <div>
-            <h2>Saldi</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+        <section id="saldi" >
+            <div class="d-flex justify-content-between mb-3" >
+                <h2>Saldi</h2>
+                <button class="btn btn-outline-info align-self-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                    Nascondi Sezione
+                </button>
+            </div>
+            <div class="row collapse  show row-cols-1 row-cols-md-3 g-4 " id="collapseExample">
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card h-100 border border-info border-2  ">
-                        <img src="assets/img/img-travel.jpg" class="card-img-top" alt="...">
+                        <img src="assets/img/img-travel.jpg" class="card-img-top" alt="img">
                         <div class="card-body">
                             <h5 class="card-title">Titolo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et
-                                possimus aliquid deserunt veritatis natus allam perspiciatis temporibus minima
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
+                                et possimus aliquid deserunt veritatis natus allam perspiciatis temporibus minima
                                 repudiandae!
                             </p>
                             <a href="#" class="btn btn-info">Prenota</a>
@@ -81,10 +86,11 @@
                 </div>
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card h-100 border border-info border-2  ">
-                        <img src="assets/img/img-travel.jpg" class="card-img-top" alt="...">
+                        <img src="assets/img/img-travel.jpg" class="card-img-top" alt="img">
                         <div class="card-body">
                             <h5 class="card-title">Titolo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
+                                et
                                 possimus aliquid deserunt veritatis natus allam perspiciatis temporibus minima
                                 repudiandae!
                             </p>
@@ -95,10 +101,11 @@
 
                 <div class="col-sm-6 col-md-4 col-lg-3 ">
                     <div class="card h-100 border border-info border-2  ">
-                        <img src="assets/img/img-travel.jpg" class="card-img-top" alt="...">
+                        <img src="assets/img/img-travel.jpg" class="card-img-top" alt="img">
                         <div class="card-body">
                             <h5 class="card-title">Titolo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
+                                et
                                 possimus aliquid deserunt veritatis natus allam perspiciatis temporibus minima
                                 repudiandae!
                             </p>
@@ -112,7 +119,8 @@
                         <img src="assets/img/img-travel.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Titolo</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia et
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia
+                                et
                                 possimus aliquid deserunt veritatis natus allam perspiciatis temporibus minima
                                 repudiandae!
                             </p>
@@ -120,18 +128,22 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
-        </div>
+
+        </section>
         <br />
-        <div>
-            <h2>Welcome Summer</h2>
-            <div class="row row-gap-3">
+       
+        <section id="welcome-summer">
+            <div class="d-flex justify-content-between mb-3" >
+                <h2>Welcome Summer</h2>
+                <button class="btn btn-outline-info align-self-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample2" aria-expanded="true" aria-controls="collapseExample2">
+                    Nascondi Sezione
+                </button>
+            </div>
+            <div class="row row-gap-3 collapse show" id="collapseExample2">
                 <div class=" col-6 col-lg-4 col-xl-2">
-                    <div class="card h-100 shadow-lg">
+                    <div class="card h-100 shadow-lg border border-0 position-relative">
                         <img src="assets/img/img-travel.jpg" class="card-img-top" alt="img">
                         <div class="card-body ">
                             <h5 class="card-title">Titolo</h5>
@@ -141,10 +153,11 @@
                             </p>
                             <a href="#" class="btn btn-info">Prenota</a>
                         </div>
+                        <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
                     </div>
                 </div>
                 <div class="col-6 col-lg-4 col-xl-2 ">
-                    <div class="card h-100 shadow-lg">
+                    <div class="card h-100 shadow-lg border border-0 position-relative">
                         <img src="assets/img/img-travel.jpg" class="card-img-top" alt="img">
                         <div class="card-body">
                             <h5 class="card-title">Titolo</h5>
@@ -154,10 +167,11 @@
                             </p>
                             <a href="#" class="btn btn-info">Prenota</a>
                         </div>
+                        <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
                     </div>
                 </div>
                 <div class="col-6 col-lg-4 col-xl-2 ">
-                    <div class="card h-100 shadow-lg">
+                    <div class="card h-100 shadow-lg border border-0 position-relative">
                         <img src="assets/img/img-travel.jpg" class="card-img-top" alt="img">
                         <div class="card-body">
                             <h5 class="card-title">Titolo</h5>
@@ -167,10 +181,11 @@
                             </p>
                             <a href="#" class="btn btn-info">Prenota</a>
                         </div>
+                        <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
                     </div>
                 </div>
                 <div class="col-6 col-lg-4 col-xl-2">
-                    <div class="card h-100 shadow-lg">
+                    <div class="card h-100 shadow-lg border border-0 position-relative">
                         <img src="assets/img/img-travel.jpg" class="card-img-top" alt="img">
                         <div class="card-body">
                             <h5 class="card-title">Titolo</h5>
@@ -180,11 +195,12 @@
                             </p>
                             <a href="#" class="btn btn-info">Prenota</a>
                         </div>
+                        <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
                     </div>
                 </div>
 
                 <div class=" col-6  col-lg-4 col-xl-2 ">
-                    <div class="card h-100 shadow-lg">
+                    <div class="card h-100 shadow-lg border border-0 position-relative">
                         <img src="assets/img/img-travel.jpg" class="card-img-top" alt="img">
                         <div class="card-body">
                             <h5 class="card-title">Titolo</h5>
@@ -194,11 +210,12 @@
                             </p>
                             <a href="#" class="btn btn-info">Prenota</a>
                         </div>
+                        <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
                     </div>
                 </div>
 
                 <div class="col-6  col-lg-4 col-xl-2 ">
-                    <div class="card h-100 shadow-lg">
+                    <div class="card h-100 shadow-lg border border-0 position-relative">
                         <img src="assets/img/img-travel.jpg" class="card-img-top" alt="img">
                         <div class="card-body">
                             <h5 class="card-title">Titolo</h5>
@@ -208,15 +225,23 @@
                             </p>
                             <a href="#" class="btn btn-info">Prenota</a>
                         </div>
+                        <span class="badge bg-danger position-absolute end-0 mt-2 me-2">HOT</span>
                     </div>
                 </div>
             </div>
 
-        </div>
+        </section>
         <br />
-        <div class="d-none d-sm-block">
-            <h2>Offerta del giorno</h2>
-            <div class="card ">
+        
+        <section class="d-none d-sm-block" >
+            <div class="d-flex justify-content-between mb-3" >
+                <h2>Offerta del giorno</h2>
+                <button class="btn btn-outline-info align-self-center" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample3" aria-expanded="true" aria-controls="collapseExample3">
+                    Nascondi Sezione
+                </button>
+            </div>
+            <div class="card collapse show " id="collapseExample3">
                 <div class="row g-0">
                     <div class="col-sm-6 col-md-8">
                         <img src="assets/img/img-travel.jpg" class="img-fluid rounded-2 shadow" alt="img">
@@ -227,94 +252,144 @@
                                 <div class="display-3">Fushifaru Maldives</div><small
                                     class="font-monospace">15.01.2021-31.01.2021</small>
                             </div>
-                            <p class="card-text">Ville a partire da <span class="lead">500 €</span>,<br>non fartele sfuggire!</p>
+                            <p class="card-text">Ville a partire da <span class="lead">500 €</span>,<br>non fartele
+                                sfuggire!</p>
                             <span class="badge rounded-pill text-bg-dark">best offer</span>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <br />
+        <section id="last-Minute">
+              <div class="d-flex justify-content-between mb-3" >
+                <h2>Last Minute</h2>
+            <button class="btn btn-outline-info align-self-center" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample4" aria-expanded="true" aria-controls="collapseExample4">
+                Nascondi Sezione
+            </button>
         </div>
-        <br/>
-        <div>
-            <h2>Last Minute</h2>
-            <div class="row row-gap-5 ">
-                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg" class="img-fluid rounded-2 shadow" alt="img"></div>
-                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg" class="img-fluid rounded-2 shadow" alt="img"></div>
-                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg" class="img-fluid rounded-2 shadow" alt="img"></div>
-                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg" class="img-fluid rounded-2 shadow" alt="img"></div>
-                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg" class="img-fluid rounded-2 shadow" alt="img"></div>
-                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg" class="img-fluid rounded-2 shadow" alt="img"></div>
+            <div class="row collapse show row-gap-5 " id="collapseExample4">
+                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg"
+                        class="img-fluid rounded-2 shadow" alt="img"></div>
+                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg"
+                        class="img-fluid rounded-2 shadow" alt="img"></div>
+                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg"
+                        class="img-fluid rounded-2 shadow" alt="img"></div>
+                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg"
+                        class="img-fluid rounded-2 shadow" alt="img"></div>
+                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg"
+                        class="img-fluid rounded-2 shadow" alt="img"></div>
+                <div class="col-6 col-md-4 col-lg-2 "><img src="assets/img/img-travel.jpg"
+                        class="img-fluid rounded-2 shadow" alt="img"></div>
             </div>
-        </div>
-        <br/>
-        <div>
-            <h2 class="d-flex justify-content-center">Dicono di noi</h2>
-            <div class="row">
-                <div class="col-12 d-flex gap-3 ">
-                    <div><img src="assets/img/man.png" width="40" height="40" class="rounded-circle "/></div>
-                    <div >
-                        <h5>Username</h5>
-                         <p>
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                             reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                             nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                             sunt in culpa qui officia deserunt mollit anim id est laborum.
-                         </p>
-                     </div>
-                </div>
-                <div class="col-12 d-flex gap-3 ">
-                    <div><img src="assets/img/womens-day.png" width="40" height="40" class="rounded-circle "/></div>
-                    <div >
-                        <h5>Username</h5>
-                         <p>
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                             reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                             nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                             sunt in culpa qui officia deserunt mollit anim id est laborum.
-                         </p>
-                     </div>
-                </div>
-                <div class="col-12 d-flex gap-3 ">
-                    <div><img src="assets/img/grandfather.png" width="40" height="40" class="rounded-circle "/></div>
-                    <div >
-                        <h5>Username</h5>
-                         <p>
-                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                             enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                             nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                             reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                             nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                             sunt in culpa qui officia deserunt mollit anim id est laborum.
-                         </p>
-                     </div>
-                </div>
-                
-            </div>
+        </section>
+        <br />
+       
+        <section id="dicono-di-noi">
+            <div class="d-flex mb-3 justify-content-center " >
+                <h2>Dicono di noi</h2>
+                    <button class="btn btn-outline-info border-0 align-self-center" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseExample4" aria-expanded="true" aria-controls="collapseExample4">
+                 ▼ 
+            </button> 
         </div>
 
+            <div class="row collapse show " id="collapseExample4">
+                <div class="col-12 d-flex gap-3 ">
+                    <div><img src="assets/img/man.png" width="40" height="40" class="rounded-circle " /></div>
+                    <div>
+                        <h5>Username</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex gap-3 ">
+                    <div><img src="assets/img/womens-day.png" width="40" height="40" class="rounded-circle " /></div>
+                    <div>
+                        <h5>Username</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 d-flex gap-3 ">
+                    <div><img src="assets/img/grandfather.png" width="40" height="40" class="rounded-circle " /></div>
+                    <div>
+                        <h5>Username</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </div>
-    <footer class=" container-fluid d-flex flex-column d-flex justify-content-center align-items-center bg-dark bg-gradient py-5">
-      
-             <button type="button" class="btn btn-outline-secondary w-15 mb-2 btn-lg-w-20">Contattaci</button>
-        <div class="text-light"><small>© 2021 Kalina Travel LTD. All Rights Reserved.</small></div> 
-       
-       <!-- <footer class="container-fluid bg-dark text-light d-flex flex-column justify-content-center align-items-center py-5">
+    <footer
+        class=" container-fluid d-flex flex-column d-flex justify-content-center align-items-center bg-dark bg-gradient py-5">
+
+        <button type="button" class="btn btn-outline-secondary w-15 mb-2 btn-lg-w-20" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Contattaci</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title fs-5 " id="exampleModalLabel"><strong>Contattaci</strong></h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <label for="recipient-name" class="col-form-label">Inserisci il tuo indirizzo email:</label>
+                      <input type="text" class="form-control" id="recipient-name">
+                    </div>
+                    <div class="mb-3">
+                      <label for="message-text" class="col-form-label">
+                        scrivi il tuo messaggio:</label>
+                      <textarea class="form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">chiudi </button>
+                  <button type="button" class="btn text-white btn-info">invia messaggio</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <div class="text-light">© 2021 Kalina Travel LTD. All Rights Reserved.</div>
+
+        <!-- <footer class="container-fluid bg-dark text-light d-flex flex-column justify-content-center align-items-center py-5">
         <button type="button" class="btn btn-outline-secondary mb-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Contattaci
         </button>
 
         <span>© 2021 Kalina Travel LTD. All Rights Reserved.</span>
     </footer> -->
-        
+
     </footer>
-   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
