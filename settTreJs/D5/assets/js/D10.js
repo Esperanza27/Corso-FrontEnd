@@ -442,10 +442,7 @@ lista();
 */
 const aggiungeTag = function () {
   const tag  = document.getElementsByTagName("tr")
-  tag.map((tag)=>
-    tag.classList.add("test")
-  )
-  }
+  tag.map((tag)=>tag.classList.add("test"))}
  aggiungeTag()
 // [EXTRA] JS Avanzato
 
