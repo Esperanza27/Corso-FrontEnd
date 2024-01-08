@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Cuore</h1>
+        <h1>Esercizio</h1>
         <ImageComponent
           srcImage="../src/assets/heart-3147976_640.jpg"
           altText="cuore"
