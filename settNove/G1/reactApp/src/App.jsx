@@ -7,6 +7,7 @@ import ImageComponent from "./components/image/ImageComponent";
 
 function App() {
   const [count, setCount] = useState(0);
+  const initialCounter = 0;
 
   return (
     <>
@@ -19,10 +20,7 @@ function App() {
       </div>
 
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <ButtonComponent label="CLICK" />
+        <ButtonComponent label="👍" score={initialCounter} />
       </div>
     </>
   );
