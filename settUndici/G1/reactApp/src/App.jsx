@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import ButtonComponent from "./components/buttons/ButtonComponent";
-import ImageComponent from "./components/image/ImageComponent";
+import ImageComponent from "./components/images/ImageComponent";
 
 function App() {
   const [count, setCount] = useState(0);
