@@ -5,7 +5,8 @@ import HorrorBooks from "../data/horror.json";
 import RomanceBooks from "../data/romance.json";
 import ScifiBooks from "../data/scifi.json";
 
-const Buttons = ({ setBooks }) => {
+// eslint-disable-next-line react/prop-types
+const Buttons = ({setBooks}) => {
   const categories = [
     {
       name: "Fantasy",
