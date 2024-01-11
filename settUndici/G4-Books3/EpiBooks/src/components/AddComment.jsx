@@ -31,17 +31,17 @@ const AddComment= ({asin}) => {
 
     return (
         <div className="p-2 border mt-2">
-                <small>LASCIA UNA RECENSIONE</small>
+                <small>Leave a comment</small>
                 <Form.Control type="text" placeholder="Scrivi la recensione..." value={newComment.comment} onChange={(e) => setComment({...newComment, comment: e.target.value})} />  
                 <Form.Select aria-label="Default select example" value={newComment.rate} onChange={(e) => setComment({...newComment, rate: e.target.value})}>
-                    <option>Seleziona il voto</option>
+                    <option>Select the vote</option>
                     <option value="3">5</option>
                     <option value="3">4</option>
                     <option value="3">3</option>
                     <option value="2">2</option>
                     <option value="1">1</option>
                 </Form.Select>
-                <Button variant="outline-primary" size="sm" className="mt-2" onClick={() => postData()}>Invia</Button>
+                <Button variant="outline-primary" size="sm" className="mt-2" onClick={() => postData()}><i className="bi bi-send-plus"></i></Button>
             </div>
     )
 }
