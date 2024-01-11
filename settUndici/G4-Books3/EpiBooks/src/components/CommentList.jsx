@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 import Loading from './Loading';
 import Comment from './Comment';
@@ -7,6 +8,7 @@ const CommentList = ({asin}) => {
 
     const [comments, setComments] = useState(null)
     const [isLoading, setLoading] = useState(false)
+    // eslint-disable-next-line no-unused-vars
     const [isError, setError] = useState(false)
 
      const fetchData = async () => {
@@ -38,12 +40,12 @@ const CommentList = ({asin}) => {
     }, [])
 
     return (
-        <div style={{"width: '280px'"}}  className="rounded mx-auto border border-2 border-black p-2">
-            <h3>Commenti</h3>
+        <div style={{width:"280px"}}  className="rounded mx-auto border border-2 border-black p-2">
+            <h3>Comments</h3>
             {isLoading && <Loading/>}
             {comments?.length > 0 
                 ? comments.map((comment, index) => <Comment comment={comment} key={index}/>) 
-                : <p>Non ci sono commenti</p>}
+                : <p>No comments</p>}
                 <AddComment asin={asin}/>
         </div>
     )

@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import { Button, Card, Col } from 'react-bootstrap'; 
+import CommentList from "./CommentList";
 
 const Book = ({ book }) => {
   const [selected, setSelected] = useState(false);
@@ -26,7 +27,7 @@ const Book = ({ book }) => {
           </div>
         </Card.Body>
       </Card>
-      {selected && <CommentSection asin={book.asin}/>}
+      {selected && <CommentList asin={book.asin}/>}
     </Col>
      
     </>

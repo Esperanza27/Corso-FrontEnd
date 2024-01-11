@@ -21,4 +21,4 @@ const Main = ({setPageTitle}) => {
     )
 }
 
-export default Main
+export default Main;

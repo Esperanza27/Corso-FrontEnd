@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const Comment = ({ comment }) => {
     const deleteData = async (asin) => {
         try {

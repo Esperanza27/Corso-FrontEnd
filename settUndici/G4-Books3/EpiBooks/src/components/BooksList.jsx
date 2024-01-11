@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Book from "./Book";
 import Buttons from "./Buttons";
 
+// eslint-disable-next-line react/prop-types
 const BooksList =({retriveTitle})=>{
     const [booksList, setBooksList] = useState([]);
     const [bookslistFiltered, setBooksListFiltered] = useState([]);
