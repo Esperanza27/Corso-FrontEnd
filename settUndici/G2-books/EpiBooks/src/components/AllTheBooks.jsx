@@ -3,6 +3,7 @@ import { Col, Row } from "react-bootstrap";
 import { useState } from "react";
 import Buttons from "./Buttons";
 import Cards from "./Cards";
+import Images from "./Images";
 
 const AllTheBooks = () => {
   const [books, setBooks] = useState([]);
@@ -14,8 +15,11 @@ const AllTheBooks = () => {
             </Col>
         </Row>
         <Row>
-            <Col >
-           <Cards books={books}/>
+            <Col > 
+            {/* <Images/> */}
+            <Cards books={books}/>
+
+        {/* {(books.length === 0)? <Images/> : <Cards books={books}/>  }  */}
             </Col>
         </Row>
 
