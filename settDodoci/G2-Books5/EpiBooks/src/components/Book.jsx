@@ -3,7 +3,7 @@ import { Component } from "react";
 import { Button, Card, Col } from 'react-bootstrap'; 
 import CommentList from "./CommentList";
 
-class Book extends Component /* ({ book }) =>  */{
+class Book extends Component {
   state = {
     selected: false,
   }
