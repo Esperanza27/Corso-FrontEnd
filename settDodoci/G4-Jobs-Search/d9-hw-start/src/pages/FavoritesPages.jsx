@@ -1,18 +1,18 @@
 import { Button, Container, ListGroup } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
-import { setRemoveFavorite } from '../redux/actions/favoritesActions'
+/* import { setRemoveFavorite } from "../redux/actions/favoritesActions"; */
 import { Link } from "react-router-dom";
+import { REMOVE_FAVORITE } from "../redux/actions/favoritesActions";
 const FavoritesPage = () => {
-
-const dispatch = useDispatch(); 
+  const dispatch = useDispatch();
   const favorites = useSelector((state) => state.list);
- 
-  const deleteFavorite = (fav) => {
+
+ /*  const deleteFavorite = (fav) => {
     dispatch({
-      type: "REMOVE_FROM_FAVOURITE",
+      type: "REMOVE_FAVORITE",
       payload: setRemoveFavorite(fav),
     });
-  };
+  }; */
   return (
     <div>
       <Container>
@@ -26,7 +26,9 @@ const dispatch = useDispatch();
                 return (
                   <ListGroup.Item action href="#link1" key={index}>
                     <Link to={"/" + favorite}>{favorite}</Link>
-                    <Button onClick={deleteFavorite(favorite)}>
+                    {/* <Button onClick={deleteFavorite(favorite)}> */}
+                    <Button variant="outline-danger" onClick={() => dispatch({ type: REMOVE_FAVORITE, payload: favorite })}>
+                        
                       <svg
                         xmlns="http://www.w3.o rg/2000/svg"
                         width="16"

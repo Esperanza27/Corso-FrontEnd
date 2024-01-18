@@ -1,4 +1,13 @@
-import { createStore } from "redux";
-import rootReducer from "../reducers/rootReducer";
-const store = createStore(rootReducer);
+/* import { configureStore } from "@reduxjs/toolkit";
+import favoritesReducer from '../reducers/favoritesReducer'
+const store = configureStore({
+    reducer: favoritesReducer
+});
+export default store; */
+
+import { createStore } from 'redux'
+import favoritesReducer from '../reducers/favoritesReducer';
+
+const store = createStore(favoritesReducer);
+
 export default store;

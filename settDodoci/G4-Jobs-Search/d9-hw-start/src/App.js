@@ -4,16 +4,20 @@ import MainSearch from "./components/MainSearch";
 import CompanySearchResults from "./components/CompanySearchResults";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FavoritesPage from "./pages/FavoritesPages";
+import { Provider } from "react-redux";
+import store from "./redux/store/store";
 
 function App() {
   return (
+   /*  <Provider store={store}> */
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<MainSearch />} />
         <Route path="/:company" element={<CompanySearchResults />} />
-        <Route path="/favoritesPage" element={<FavoritesPage/>} />
+        <Route path="/favoritesPage" element={<FavoritesPage />} />
       </Routes>
     </BrowserRouter>
+ /*    </Provider> */
   );
 }
 
